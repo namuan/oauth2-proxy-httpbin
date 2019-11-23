@@ -1,0 +1,19 @@
+version: "3"
+services:
+  oauth2proxy:
+    image: "bitnami/oauth2-proxy:latest"
+    ports:
+    - "8080:8080"
+    command: [
+      "--provider=github",
+      "--cookie-secure=false",
+      "--upstream=http://httpbin:80",
+      "--http-address=0.0.0.0:8080",
+      "--skip-auth-regex=/forms/*",
+      "--redirect-url=http://localtest.me:8080/oauth2/callback",
+      "--email-domain=*"
+    ]
+    env_file:
+      - .env  
+  httpbin:
+    image: kennethreitz/httpbin
