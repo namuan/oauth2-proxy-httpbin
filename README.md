@@ -18,7 +18,7 @@ We will be running the application on port 8080 so the callback url is set as ht
 
 That is it for setting up the application. Note down the Client ID and Client Secret which will be used later.
 
-![Github Client configuration](images/20191123203829880_1457857208.png =318x)
+![Github Client configuration](images/20191123203829880_1457857208.png)
 
 #### Running application with proxy:
 
@@ -49,5 +49,5 @@ docker-compose up
 
 It'll take some time if it is running for the first time to pull any missing docker images. Once everything is running, you can visit `http://localtest.me:8080/` in the browser which should show you a screen with a button to "Sign in with Github". Here is a brief sequence of the login flow and accessing httpbin.
 
-![oauth2_proxy_login_httpbin](images/20191123205446156_784242929.gif =495x)
+![oauth2_proxy_login_httpbin](images/20191123205446156_784242929.gif)
 
