@@ -1,6 +1,8 @@
 # Protecting applications with OAuth2 Proxy
 
-Here is a simple guide on protecting a website with social logins supporting OAuth2. It uses an open source ([OAuth2 Proxy](https://pusher.github.io/oauth2_proxy/) which is a fork from [Bitly OAuth2 Proxy](https://github.com/bitly/oauth2_proxy) to secure private applications without adding any authenticating login in the application itself.
+Here is a simple guide on protecting a website with social logins supporting OAuth2. 
+It uses an open source ([OAuth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy)
+to secure private applications without adding any authenticating login in the application itself.
 
 Here is what the architecture looks like.
 
